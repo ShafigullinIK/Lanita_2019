@@ -1,4 +1,4 @@
-package Examples;
+package Examples.ru.lanit.stocklist;
 
 public class TechItem extends GenericItem {
 

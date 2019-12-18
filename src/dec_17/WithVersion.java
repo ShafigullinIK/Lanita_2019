@@ -1,7 +1,5 @@
 package dec_17;
 
-import Examples.GenericItem;
-
 public class WithVersion<T> {
 //public class WithVersion<T extends Person> { // - эта версия нужна, если можно использовать только наследников классаPerson
 

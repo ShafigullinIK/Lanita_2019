@@ -1,7 +1,6 @@
-package Examples;
+package Examples.ru.lanit.stocklist;
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class FoodItem extends GenericItem {
@@ -18,6 +17,15 @@ public class FoodItem extends GenericItem {
         super(name, price, cat);
         this.dateOfIncome = date;
         this.expires = expires;
+    }
+
+    public FoodItem(
+            String name,
+            float price,
+            FoodItem analog,
+            GregorianCalendar date,
+            short expires){
+        this(name, price, analog.getCategorie(), date, expires);
     }
 
     public FoodItem(
