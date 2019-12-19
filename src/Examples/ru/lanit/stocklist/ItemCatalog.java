@@ -34,6 +34,10 @@ public class ItemCatalog {
         }
     }
 
+    public ArrayList<GenericItem> getALCatalog() {
+        return ALCatalog;
+    }
+
     public GenericItem findItemByIDAL(int id){
         for (GenericItem i: ALCatalog) {
             if(i.getId() == id){

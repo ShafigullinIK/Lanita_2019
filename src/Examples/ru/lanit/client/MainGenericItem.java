@@ -2,6 +2,7 @@ package Examples.ru.lanit.client;
 
 import Examples.ru.lanit.exceptions.CatalogLoadException;
 import Examples.ru.lanit.stocklist.ItemCatalog;
+import Examples.ru.lanit.view.CatalogTool;
 
 public class MainGenericItem {
 
@@ -13,9 +14,7 @@ public class MainGenericItem {
         } catch (CatalogLoadException e){
 
         }
-
-        testAL(catalog);
-        testMap(catalog);
+        new CatalogTool(catalog);
     }
 
     public static void testMap(ItemCatalog catalog){
